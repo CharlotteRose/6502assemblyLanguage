@@ -1,0 +1,2 @@
+.label start=$c010
+.label print=$c01c
