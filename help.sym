@@ -1,2 +1,2 @@
-.label start=$c010
-.label print=$c01c
+.label div5=$c00b
+.label print=$c01e

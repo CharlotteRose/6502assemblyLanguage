@@ -1,19 +1,31 @@
 .pc = $C000
 lda #$00
 sta $C064
+lda #$00
+sta $C066
 ldx #$0A
 stx $C065
-jsr div5 
+jsr fizzbuzz
+fizzbuzz:
+jsr div5
+jsr count 
+rts
+count: 
+lda $C066 
+clc 
+adc #$01
+cmp $C065
+bne fizzbuzz
+beq end
+rts
 div5:
-ldx $C065
-txa 
+lda $C065
 sec
 sbc #$05
-cmp #$00 
-dex
-cpx #$00	 
+jsr print
+cmp #$00  
+bne div5
 stx $C065
-bne start
 rts
 print:
 lda $C064

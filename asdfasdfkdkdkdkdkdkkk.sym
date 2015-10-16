@@ -1,5 +1,6 @@
-.label subBy5=$c026
-.label start=$c00d
-.label print=$c01c
-.label end=$c04a
-.label printBuzz=$c037
+.label end=$c055
+.label count=$c019
+.label div5=$c027
+.label fizzbuzz=$c012
+.label print=$c038
+.label printBuzz=$c042
