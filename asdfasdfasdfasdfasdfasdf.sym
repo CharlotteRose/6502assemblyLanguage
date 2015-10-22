@@ -1,0 +1,5 @@
+.label printFizz=$c037
+.label printFizzBuzz=$c04c
+.label print=$c018
+.label loop=$c012
+.label printBuzz=$c022
