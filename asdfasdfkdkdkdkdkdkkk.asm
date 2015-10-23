@@ -1,12 +1,15 @@
+
+
+
+
+
+
 .pc = $C000
-lda #$00
-sta $C064
-lda #$00
-sta $C066
-ldx #$0A
+ldx #$11
 stx $C065
 jsr fizzbuzz
 fizzbuzz:
+ldx $C065
 jsr div5
 jsr count 
 rts
@@ -22,13 +25,17 @@ div5:
 lda $C065
 sec
 sbc #$05
-jsr print
 cmp #$00  
+bmi	div3
 bne div5
+beq buzzTrue
 stx $C065
 rts
+buzzTure:
+ldy #$01
+sty $C067
 print:
-lda $C064
+lda #$00
 ldx $C065
 jsr $BDCD
 rts

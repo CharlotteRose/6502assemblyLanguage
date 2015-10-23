@@ -1,6 +1,6 @@
-.label end=$c055
-.label count=$c019
-.label div5=$c027
-.label fizzbuzz=$c012
-.label print=$c038
-.label printBuzz=$c042
+.label end=$c04b
+.label count=$c00f
+.label div5=$c01d
+.label fizzbuzz=$c008
+.label print=$c02e
+.label printBuzz=$c038
