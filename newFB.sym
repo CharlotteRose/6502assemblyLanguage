@@ -1,0 +1,9 @@
+.label mod5=$c022
+.label mod3=$c016
+.label firstPass=$c008
+.label printFizz=$c02e
+.label end=$c086
+.label secondPass=$c00f
+.label counter=$c076
+.label printNumber=$c065
+.label printBuzz=$c049
